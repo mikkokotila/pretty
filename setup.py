@@ -24,7 +24,7 @@ MAINTAINER_EMAIL = 'mailme@mikkokotila.com'
 URL = 'http://mikkokotila.com'
 LICENSE = 'MIT'
 DOWNLOAD_URL = 'https://github.com/mikkokotila/pretty'
-VERSION = '1.9.4.2'
+VERSION = '1.9.5'
 
 try:
     from setuptools import setup
@@ -85,6 +85,8 @@ if __name__ == "__main__":
         url=URL,
         version=VERSION,
         download_url=DOWNLOAD_URL,
+        include_package_data=True,
+        package_data={'astetik.extras': ['*']},
         install_requires=install_requires,
         packages=['astetik',
                   'astetik.utils',
