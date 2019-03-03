@@ -65,7 +65,7 @@ def _footer(p,
 
     # LEGEND STARTS >>>
     if legend != False:
-        plt.legend(loc=1, ncol=n)
+        plt.legend(loc='upper right', bbox_to_anchor=(1.3, 0.9), ncol=1)
 
     # HANDLE LABELS
     plt.xlabel(xlabel, color=default_color)
@@ -85,7 +85,13 @@ def _footer(p,
 
     # SAVING THE PLOT
     if save != False:
-        dt = datetime.now()
-        time_stamp = time.strftime('%Y%m%d_%H%M%S_' + str(dt.microsecond))
-        filename = "astetik_" + time_stamp + ".png"
+
+        if isinstance(save, str):
+            filename = save
+        
+        else:
+            dt = datetime.now()
+            time_stamp = time.strftime('%Y%m%d_%H%M%S_' + str(dt.microsecond))
+            filename = "astetik_" + time_stamp + ".png"
+        
         plt.savefig(filename, dpi=72)

@@ -1,3 +1,4 @@
+wrangle
 seaborn
 geonamescache
 numpy
@@ -5,3 +6,4 @@ pandas
 IPython
 patsy
 statsmodels
+sklearn
