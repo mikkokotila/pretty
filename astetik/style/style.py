@@ -18,9 +18,9 @@ def styles(dpi):
 
     style_dic = {
             # FONT
-            'font.size': 12,
-            'font.family': 'Verdana',
-            'font.stretch': 'normal',
+            'font.size': 14,
+            'font.family': 'Verdana, Geneva, sans-serif',
+            'font.stretch': 'semi-expanded',
             'font.style': 'normal',
             'font.variant': 'normal',
             'font.weight': 'normal',
@@ -34,6 +34,7 @@ def styles(dpi):
                 'axes.titlesize': 11.0,
                 'axes.titlepad': 10.0,
                 'axes.titleweight': 'normal',
+                'axes.labelpad': 15,
 
             # FIGURE
             'figure.dpi': dpi,
@@ -54,7 +55,7 @@ def styles(dpi):
 
             # LEGEND
             'legend.framealpha': 1,
-            'legend.frameon': True,
+            'legend.frameon': False,
             'legend.handleheight': 2.5,
             'legend.handlelength': 2.5,
             'legend.loc': 'upper right',
@@ -67,9 +68,7 @@ def styles(dpi):
             'savefig.directory': '~',
             'savefig.dpi': 'figure',
             'savefig.edgecolor': 'white',
-            'savefig.facecolor': 'white',
             'savefig.format': 'png',
-            'savefig.frameon': False,
             'savefig.jpeg_quality': 95,
             'savefig.orientation': 'portrait',
             'savefig.pad_inches': 0.1,

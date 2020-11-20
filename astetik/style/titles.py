@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 def _titles(title,
             sub_title,
-            location='left',
-            fontname='Verdana',
-            fontsize='24'):
+            location='center',
+            fontname='Arial',
+            fontsize='18'):
 
     '''TITLE HANDLER
 
@@ -33,11 +33,14 @@ def _titles(title,
         title = title.replace(' ', '\,')
         title = title.replace('_', '\_')
 
-        # NOTE: it's probably better to draw some lines...
         plt.title(r"$\bf{" + title + "}$" + '\n' + sub_title,
                   loc=location,
                   fontsize=fontsize,
                   fontname=fontname,
                   weight='normal',
                   y=1.03,
-                  color="grey");
+                  color="#342b3b");
+
+
+                  
+
